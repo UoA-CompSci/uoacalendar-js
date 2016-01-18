@@ -372,10 +372,7 @@ class UoACalendarClient
         toUTCString = (date) ->
             return (new Date(date.getTime() + date.getTimezoneOffset() * 60000)).toISOString()
 
-        @sendRequest('/calendars/' + calendarId + '/find_events/', 'GET',
-            {startDate: toUTCString(startDate), endDate: toUTCString(endDate)},
-            onSuccess, onError
-            )
+        @sendRequest('/calendars/' + calendarId + '/find_events/?endAfter=' + toUTCString(startDate) + '&startBefore=' + toUTCString(endDate), 'GET', {}, onSuccess, onError)
 
 exports.UoACalendarClient = UoACalendarClient
 
