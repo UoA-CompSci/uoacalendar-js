@@ -18,14 +18,11 @@ Then just include the script into your HTML code:
 
 ## Obtain an API token
 
-Before getting started you should obtain an API token, which can be retrieved using your UPI credentials:
+Before getting started you should obtain an API token, which can be retrieved by logging into the Diary API website using your UPI credentials:
 
-```bash
-$ curl -X POST -d "username=$USERNAME&password=$PASSWORD" http://diaryapi.auckland.ac.nz:8000/api-token-auth
-{"token":"<YOUR_API_TOKEN>"}
-```
+http://diaryapi.auckland.ac.nz
 
-Copy *JUST* the value of the token returned by the server. 
+Then click your UPI on the top right corner, select ``API Token'' from the dropdown menu.  A popup window will display the token.  Copy *JUST* the value of the token returned by the server. 
 
 > Make sure you keep this token safe as it is used by the server to determine the user that sends the requests as means of authentication, so you don't want other users to mess up with your calendars, or do you?
 
