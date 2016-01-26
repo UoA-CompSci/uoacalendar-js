@@ -26,6 +26,8 @@ Then click your UPI on the top right corner, select ``API Token'' from the dropd
 
 > Make sure you keep this token safe as it is used by the server to determine the user that sends the requests as means of authentication, so you don't want other users to mess up with your calendars, or do you?
 
+> Also, like other single sign-on (SSO) sites, don't forget to close all windows/tabs in the browser after you finish with the diaryapi.auckland.ac.nz website.
+
 ## Interacting with the server
 
 Now, in your Javascript code you may instantiate a client object:
